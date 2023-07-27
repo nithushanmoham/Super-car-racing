@@ -99,23 +99,7 @@ var player=new function(){
             gnd=1
         }
 
-        function moveImage() {
-            var image = document.getElementById("myImage");
-            
-            // Change the position of the image
-            var currentLeft = parseInt(gazpedal.png) || 0; // Get the current left position as an integer
-            var currentTop = parseInt(image.style.top) || 0;   // Get the current top position as an integer
-          
-            // Update the new position
-            var newLeft = currentLeft + 10; // Change the value as desired for horizontal movement
-            var newTop = currentTop + 10;   // Change the value as desired for vertical movement
-          
-            // Set the new position using CSS style
-            image.style.left = newLeft + "px";
-            image.style.top = newTop + "px";
-        }
-        
-        //fall check
+            //fall check
         if(!playing || gnd && Math.abs(this.rotation)>Math.PI*0.5){
             playing=false
             this.rSpeed=5
