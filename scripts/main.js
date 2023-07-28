@@ -67,11 +67,10 @@ var player=new function(){
     this.drawInterface=function(){
         //interface draw
         if(playing){
-            {
+            if(mobilmi){
                 ctx.drawImage(this.leftBtn,25,cnvs.height-90,80,80)
                 ctx.drawImage(this.rightBtn,175,cnvs.height-90,80,80)
                 ctx.drawImage(this.gasBtn,cnvs.width-200,cnvs.height-90,80,80)
-               
             }
             
         }else{
